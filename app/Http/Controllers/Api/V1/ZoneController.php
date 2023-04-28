@@ -9,6 +9,10 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\ZoneResource;
 use function GuzzleHttp\Promise\all;
 
+
+/**
+    * @group Zones
+*/
 class ZoneController extends Controller
 {
     public function index()

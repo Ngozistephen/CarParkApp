@@ -9,6 +9,10 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\VehicleResource;
 use App\Http\Requests\StoreVehicleRequest;
 
+
+/**
+    * @group Vehicles
+*/
 class VehicleController extends Controller
 {
     /**

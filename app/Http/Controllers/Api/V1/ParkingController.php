@@ -9,6 +9,10 @@ use App\Http\Controllers\Controller;
 use App\Services\ParkingPriceService;
 use App\Http\Resources\ParkingResource;
 
+
+/**
+    * @group Parking
+*/
 class ParkingController extends Controller
 {
     public function start(Request $request)
