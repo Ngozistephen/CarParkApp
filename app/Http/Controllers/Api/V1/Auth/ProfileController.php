@@ -7,7 +7,9 @@ use Illuminate\Http\Response;
 use Illuminate\Validation\Rule;
 use App\Http\Controllers\Controller;
 
-
+/**
+    * @group Auth
+*/
 class ProfileController extends Controller
 {
     public function show(Request $request)

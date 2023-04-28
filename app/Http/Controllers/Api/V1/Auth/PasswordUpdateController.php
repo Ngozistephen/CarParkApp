@@ -8,6 +8,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 
+/**
+    * @group Auth
+*/
 class PasswordUpdateController extends Controller
 {
     public function __invoke(Request $request)
