@@ -43,6 +43,7 @@ class ParkingController extends Controller
 
     public function show(Parking $parking)
     {
+        $parking->load(['vehicle' => fn ($q) => $q->withTrashed()]);
         return ParkingResource::make($parking);
     }
 
@@ -54,5 +55,25 @@ class ParkingController extends Controller
         ]);
     
         return ParkingResource::make($parking);
+    }
+
+
+    
+    public function index()
+    {
+        $activeParkings = Parking::active()->latest('start_time')->get();
+
+        return ParkingResource::collection($activeParkings);
+    }
+
+
+    public function history()
+    {
+        $stoppedParkings = Parking::stopped()
+            ->with(['vehicle' => fn ($q) => $q->withTrashed()])
+            ->latest('stop_time')
+            ->get();
+
+        return ParkingResource::collection($stoppedParkings);
     }
 }

@@ -7,10 +7,12 @@ use App\Models\Vehicle;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Parking extends Model
 {
     use HasFactory;
+    // use SoftDeletes;
 
     protected $fillable = ['user_id', 'vehicle_id', 'zone_id', 'start_time', 'stop_time', 'total_price'];
 
@@ -40,6 +42,11 @@ class Parking extends Model
     public function scopeStopped($query)
     {
         return $query->whereNotNull('stop_time');
+    }
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
     }
 
 
