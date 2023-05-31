@@ -12,6 +12,15 @@ This is a Laravel API project with no visual layer (Postman images below), it is
 ![Screenshot 2023-05-31 031432](https://github.com/Ngozistephen/CarParkApp/assets/60478145/2406f532-3e87-4e3e-a40e-ea71698bd621)
 
 # Manage User Vehicle
+API endpoints for a user to manage their vehicles. A typical CRUD
+![Screenshot 2023-05-31 032118](https://github.com/Ngozistephen/CarParkApp/assets/60478145/6dcb6bca-ebdb-4584-86a9-2449b0153597)
+![Screenshot 2023-05-31 032542](https://github.com/Ngozistephen/CarParkApp/assets/60478145/fefece78-3459-4f47-a0b8-f8347096a9f9)
+
+# Parking Functionality
+Implementing stop and start parking for a user
+![Screenshot 2023-05-31 033245](https://github.com/Ngozistephen/CarParkApp/assets/60478145/8c81f398-9bd4-4031-86d6-80e163bebb3e)
+![Screenshot 2023-05-31 033641](https://github.com/Ngozistephen/CarParkApp/assets/60478145/c028d8ac-9e49-42dd-b1b7-1b622cca38ae)
+
 
 
 ## Learning Laravel
