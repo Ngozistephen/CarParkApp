@@ -21,6 +21,10 @@ Implementing stop and start parking for a user
 ![Screenshot 2023-05-31 033245](https://github.com/Ngozistephen/CarParkApp/assets/60478145/8c81f398-9bd4-4031-86d6-80e163bebb3e)
 ![Screenshot 2023-05-31 033641](https://github.com/Ngozistephen/CarParkApp/assets/60478145/c028d8ac-9e49-42dd-b1b7-1b622cca38ae)
 
+# Price Calculation
+It calculates the current price by Zoes and duration, then save that price when the parking is stopped
+![Screenshot 2023-05-31 035012](https://github.com/Ngozistephen/CarParkApp/assets/60478145/f7300940-7a43-41e8-88ab-57c76164d750)
+
 
 
 ## Learning Laravel
